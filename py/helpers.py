@@ -3,6 +3,7 @@ import shutil
 import webbrowser
 import os
 
+
 def print_to_console(con):
     con.rule("  Welcome to the Flask Initializer  ", style="white on blue")
     con.print("[green]_\n_\n_\n")
@@ -38,6 +39,11 @@ def write_main_files(app_name, app_path):
     f.close()
 
     # Create the routes file
+    text = """
+    <h1>Welcome to Flask!</h1>
+    <br>
+    <h3>Edit the `routes.py` file to see changes in the app</h3>
+    """
     f = open(f"{app_name}/{app_path}/routes.py", "w")
     f.writelines(
         [
@@ -45,7 +51,8 @@ def write_main_files(app_name, app_path):
             "@app.route('/')\n",
             "@app.route('/index')\n",
             "def index():\n",
-            "\treturn 'Hello World'",
+            f"\treturn '''{text}",
+            "'''"
         ],
     )
     f.close()
@@ -68,6 +75,7 @@ def replace_spaces(string):
         string = string.replace("  ", " ")
     string = string.replace(" ", "_")
     return string
+
 
 def run_app(app_name):
     webbrowser.open("http://localhost:5000")
