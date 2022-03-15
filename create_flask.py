@@ -19,4 +19,4 @@ def init_flask(
 
 
 if __name__ == "__main__":
-    init_flask("flask_test", cleanup=True, run=False)
+    init_flask("flask_test", cleanup=True, run=True)
