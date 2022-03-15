@@ -1,5 +1,7 @@
-from py.helpers import cleanup_files, write_main_files, run_app 
+from py.helpers import cleanup_files, write_main_files, run_app
 import os
+
+APP_NAME = "flask_test"
 
 
 def init_flask(
@@ -19,4 +21,4 @@ def init_flask(
 
 
 if __name__ == "__main__":
-    init_flask("flask_test", cleanup=True, run=True)
+    init_flask(app_name=APP_NAME, cleanup=True, run=True)

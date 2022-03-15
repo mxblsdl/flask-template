@@ -26,4 +26,3 @@ def init_flask(cleanup: bool, app_path: str = "app") -> None:
 
 if __name__ == "__main__":
     init_flask(cleanup=True)
-    # os.makedirs("test/app")
