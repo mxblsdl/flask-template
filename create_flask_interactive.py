@@ -1,6 +1,6 @@
 from rich.console import Console
 from rich.theme import Theme
-from py.helpers import cleanup_files, print_to_console, write_main_files, run_app 
+from helpers.helpers import cleanup_files, print_to_console, write_main_files, run_app 
 import os
 
 

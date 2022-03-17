@@ -1,4 +1,4 @@
-from py.helpers import cleanup_files, write_main_files, run_app
+from helpers import cleanup_files, write_main_files, run_app
 import os
 
 APP_NAME = "flask_test"
