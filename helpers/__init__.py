@@ -52,7 +52,7 @@ def write_main_files(app_name, app_path):
             "@app.route('/index')\n",
             "def index():\n",
             f"\treturn '''{text}",
-            "'''"
+            "'''",
         ],
     )
     f.close()
